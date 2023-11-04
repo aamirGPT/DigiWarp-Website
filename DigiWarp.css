@@ -4,6 +4,15 @@
     --Accent-Background: #c8c8b2;
     --Accent-Background2: #fffff5;
 }
+@font-face {
+    font-family: 'Lovelo'; /* Name you'll use to refer to this font */
+    src: url('./assets/font/Lovelo-Black.otf') format('otf'), /* Font file path and format */
+         url('./assets/font/Lovelo-Line-Bold.otf') format('otf'), /* Additional formats for browser compatibility */
+         url('./assets/font/Lovelo-Line-Light.otf') format('otf'); /* Additional formats for browser compatibility */
+    /* Add more src lines if you have different font formats available */
+    font-weight: normal; /* Font weight (normal, bold, etc.) */
+    font-style: normal; /* Font style (normal, italic, etc.) */
+}
 
 * {
     margin: 0;
@@ -15,6 +24,7 @@ html {
 body {
     min-height: 100%;
     background-color: gray;
+    font-family: Lovelo, Arial, Helvetica, sans-serif;
 }
 .Navigation-Body {
     display: flex;
@@ -54,10 +64,47 @@ body {
 
 .Section-1 {
     display: flex;
-    background-color: silver;
+    position: relative;
+    background-color: black;
     justify-content: space-between;
-    height: 80vh;
     padding: 15px 20px;
+    overflow: hidden;
+    background-size: cover;
+}
+.Section-1-Button-Styling{
+    background-color: var(--Accent-Background);
+    border-color: var(--Accent-Background);
+    color: var(--Black-Background);
+    font-weight: bold;
+}
+.Section-1-Button-Styling:hover{
+    background-color: #a4a492;
+    border-color: #a4a492;
+    color: var(--Black-Background);
+}
+.Section-1-Button-Styling:active{
+    background-color: #a4a492 !important;
+    border-color: #a4a492 !important;
+    color: var(--Black-Background);
+}
+.Text-White{
+    color: white;
+    opacity: 1;
+    filter: blur(0);
+    text-shadow: 0 0 50px #000;
+}
+.Section-1::before {
+    content: "";
+    background-image: url('/assets/images/Section1BG.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+    opacity: 0.2;
 }
 .Section-1-Left {
     display: flex;
@@ -65,6 +112,7 @@ body {
     justify-content: space-between;
     padding: 5vh 0px;
     width: 65%;
+    gap: 20px;
 }
 .Section-1-Right {
     display: flex;
@@ -73,7 +121,7 @@ body {
     padding: 5vh 0px;
 }
 .Section-1-Heading {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 .Section-1-Tagline {
@@ -96,11 +144,11 @@ body {
         object-fit: contain;
     }
     .Section-1-Heading {
-        font-size: 2.25rem;
+        font-size: 2rem;
         font-weight: bold;
     }
     .Section-1-Tagline {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .Section-1-Button {
         font-size: 1.25rem;
