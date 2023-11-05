@@ -224,14 +224,11 @@ body::-webkit-scrollbar{
     flex-direction: column;
     gap: 30px;
     position: relative;
+    width: 100%;
+    flex: 1;
 }
 .Card-Image{
-    /* height: 50%; */
-    flex: 1;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50%;
 }
 .Section2CardImage {
     width: 100%;
