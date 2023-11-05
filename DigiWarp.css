@@ -207,7 +207,7 @@ body::-webkit-scrollbar{
 .Section-2-Body {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 200px;
 }
 .Card {
     display: flex;
