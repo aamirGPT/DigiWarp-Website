@@ -6,20 +6,18 @@
     --Green-Text: #284d26;
 }
 @font-face {
-    font-family: "Lovelo"; /* Name you'll use to refer to this font */
+    font-family: "Lovelo";
     src: url("./assets/font/Lovelo-Black.otf") format("otf"),
-        /* Font file path and format */
-            url("./assets/font/Lovelo-Line-Bold.otf") format("otf"),
-        /* Additional formats for browser compatibility */
-            url("./assets/font/Lovelo-Line-Light.otf") format("otf"); /* Additional formats for browser compatibility */
-    /* Add more src lines if you have different font formats available */
-    font-weight: normal; /* Font weight (normal, bold, etc.) */
-    font-style: normal; /* Font style (normal, italic, etc.) */
+        url("./assets/font/Lovelo-Line-Bold.otf") format("otf"),
+        url("./assets/font/Lovelo-Line-Light.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
     margin: 0;
     padding: 0;
+
 }
 html {
     height: 100%;
@@ -28,6 +26,9 @@ body {
     min-height: 100%;
     background-color: gray;
     font-family: Lovelo, Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .Navigation-Body {
     display: flex;
@@ -98,7 +99,7 @@ body {
 }
 .Section-1::before {
     content: "";
-    background-image: url("/assets/images/Section1BG.jpg"); /* Replace with the path to your background image */
+    background-image: url("/assets/images/Section1BG.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -169,7 +170,7 @@ body {
     padding: 10px;
 }
 .Menu-Actions {
-    display: none; /* Initially hide the menu actions */
+    display: none;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -181,7 +182,7 @@ body {
 }
 
 .Menu-Actions.active {
-    display: flex; /* Display menu actions when active class is applied */
+    display: flex;
 }
 .Menu-Links {
     text-decoration: none;
@@ -189,14 +190,53 @@ body {
 }
 .Section-2 {
     display: flex;
-    background-color: var(--Accent-Background);
+    background-color: var(--Accent-Background2);
     color: var(--Black-Background);
-    padding: 20px;
+    padding: 30px 20px 60px 20px;
+}
+.Section-2-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
 }
 .Section-2-Heading {
     font-size: 2rem;
     font-weight: bold;
-    border: 2px solid black;
+}
+.Section-2-Body {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+.Card-Image{
+    /* height: 50%; */
+    flex: 1;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section2CardImage {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    aspect-ratio: 3/2;
+}
+.Card-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Card-Body-Heading {
+    color: var(--Green-Text);
+    font-weight: bold;
 }
 
 /* Responsive UI */
@@ -224,8 +264,24 @@ body {
     .Menu-Toggle {
         font-size: 0.75rem;
     }
+    .Section-2 {
+        padding: 20px;
+    }
+    .Section-2-Container {
+        gap: 20px;
+    }
     .Section-2-Heading {
         font-size: 1rem;
         font-weight: bold;
+    }
+    .Section-2-Body {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Card{
+        gap: 10px;
+    }
+    .Card-Body{
+        gap: 10px;
     }
 }
