@@ -13,6 +13,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 * {
     margin: 0;
@@ -237,6 +247,9 @@ body::-webkit-scrollbar{
 .Card-Body-Heading {
     color: var(--Green-Text);
     font-weight: bold;
+}
+.animate-slide-in {
+    animation: slideIn 1s ease-in-out;
 }
 
 /* Responsive UI */
