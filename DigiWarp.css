@@ -109,7 +109,7 @@ body::-webkit-scrollbar{
 }
 .Section-1::before {
     content: "";
-    background-image: url("/assets/images/Section1BG.jpg");
+    background-image: url("assets/images/Section1BG.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
