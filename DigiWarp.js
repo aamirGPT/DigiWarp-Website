@@ -6,7 +6,6 @@ document.getElementById("Menu-Toggle").addEventListener("click", function () {
     if (menuActions.classList.contains("active")) {
         menuToggle.textContent = "Close";
     } else {
-        // menuToggle.textContent = "Menu";
         menuToggle.innerHTML = '<img src="./assets/images/lines.png" alt="menu" id="HamburgerBtn"></img>';
     }
 });
