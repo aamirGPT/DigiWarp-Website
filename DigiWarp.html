@@ -10,6 +10,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="DigiWarp.css" />
     </head>
     <body>
@@ -47,12 +48,25 @@
                     ever before.
                 </div>
                 <div class="Section-1-Button Text-White">
-                    <button type="button" class="btn btn-primary Section-1-Button-Styling">
+                    <button
+                        type="button"
+                        class="btn btn-primary Section-1-Button-Styling"
+                    >
                         Explore Now
                     </button>
                 </div>
             </div>
-            <div class="Section-1-Right Text-White">==</div>
+            <div class="Section-1-Right Text-White">
+                <!-- Add a button element for the menu toggle -->
+                <button class="btn btn-primary Menu-Actions-Btn" id="Menu-Toggle"><img src="./assets/images/lines.png" alt="menu" id="HamburgerBtn"></button>
+
+                <!-- Add a list of actions that will be displayed when the button is clicked -->
+                <div class="Menu-Actions">
+                    <a href="#" class="Menu-Links">Action 1</a>
+                    <a href="#" class="Menu-Links">Action 2</a>
+                    <a href="#" class="Menu-Links">Action 3</a>
+                </div>
+            </div>
         </section>
         <script src="DigiWarp.js"></script>
         <script

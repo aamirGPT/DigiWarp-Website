@@ -5,10 +5,12 @@
     --Accent-Background2: #fffff5;
 }
 @font-face {
-    font-family: 'Lovelo'; /* Name you'll use to refer to this font */
-    src: url('./assets/font/Lovelo-Black.otf') format('otf'), /* Font file path and format */
-         url('./assets/font/Lovelo-Line-Bold.otf') format('otf'), /* Additional formats for browser compatibility */
-         url('./assets/font/Lovelo-Line-Light.otf') format('otf'); /* Additional formats for browser compatibility */
+    font-family: "Lovelo"; /* Name you'll use to refer to this font */
+    src: url("./assets/font/Lovelo-Black.otf") format("otf"),
+        /* Font file path and format */
+            url("./assets/font/Lovelo-Line-Bold.otf") format("otf"),
+        /* Additional formats for browser compatibility */
+            url("./assets/font/Lovelo-Line-Light.otf") format("otf"); /* Additional formats for browser compatibility */
     /* Add more src lines if you have different font formats available */
     font-weight: normal; /* Font weight (normal, bold, etc.) */
     font-style: normal; /* Font style (normal, italic, etc.) */
@@ -71,23 +73,23 @@ body {
     overflow: hidden;
     background-size: cover;
 }
-.Section-1-Button-Styling{
+.Section-1-Button-Styling {
     background-color: var(--Accent-Background);
     border-color: var(--Accent-Background);
     color: var(--Black-Background);
     font-weight: bold;
 }
-.Section-1-Button-Styling:hover{
+.Section-1-Button-Styling:hover {
     background-color: #a4a492;
     border-color: #a4a492;
     color: var(--Black-Background);
 }
-.Section-1-Button-Styling:active{
+.Section-1-Button-Styling:active {
     background-color: #a4a492 !important;
     border-color: #a4a492 !important;
     color: var(--Black-Background);
 }
-.Text-White{
+.Text-White {
     color: white;
     opacity: 1;
     filter: blur(0);
@@ -95,7 +97,7 @@ body {
 }
 .Section-1::before {
     content: "";
-    background-image: url('/assets/images/Section1BG.jpg'); /* Replace with the path to your background image */
+    background-image: url("/assets/images/Section1BG.jpg"); /* Replace with the path to your background image */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -116,19 +118,73 @@ body {
 }
 .Section-1-Right {
     display: flex;
-    flex-direction: column;
+    flex: 1;
     max-width: 25%;
     padding: 5vh 0px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .Section-1-Heading {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: bold;
 }
 .Section-1-Tagline {
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 .Section-1-Button {
     font-size: 1.5rem;
+}
+#HamburgerBtn {
+    width: 25px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+
+.Menu-Toggle {
+    background-color: var(--Accent-Background);
+    color: var(--Black-Background);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: fit-content;
+}
+.Menu-Actions-Btn {
+    display: flex;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px;
+}
+.Menu-Actions-Btn:active,
+.Menu-Actions-Btn:hover {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px;
+}
+.Menu-Actions {
+    display: none; /* Initially hide the menu actions */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-size: 1rem;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.Menu-Actions.active {
+    display: flex; /* Display menu actions when active class is applied */
+}
+.Menu-Links{
+    text-decoration: none;
+    text-align: center;
 }
 
 /* Responsive UI */
@@ -152,5 +208,8 @@ body {
     }
     .Section-1-Button {
         font-size: 1.25rem;
+    }
+    .Menu-Toggle {
+        font-size: 0.75rem;
     }
 }
