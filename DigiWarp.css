@@ -3,6 +3,7 @@
     --Black-Background: #000;
     --Accent-Background: #c8c8b2;
     --Accent-Background2: #fffff5;
+    --Green-Text: #284d26;
 }
 @font-face {
     font-family: "Lovelo"; /* Name you'll use to refer to this font */
@@ -182,9 +183,20 @@ body {
 .Menu-Actions.active {
     display: flex; /* Display menu actions when active class is applied */
 }
-.Menu-Links{
+.Menu-Links {
     text-decoration: none;
     text-align: center;
+}
+.Section-2 {
+    display: flex;
+    background-color: var(--Accent-Background);
+    color: var(--Black-Background);
+    padding: 20px;
+}
+.Section-2-Heading {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid black;
 }
 
 /* Responsive UI */
@@ -211,5 +223,9 @@ body {
     }
     .Menu-Toggle {
         font-size: 0.75rem;
+    }
+    .Section-2-Heading {
+        font-size: 1rem;
+        font-weight: bold;
     }
 }
