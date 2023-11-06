@@ -11,19 +11,28 @@ document.getElementById("Menu-Toggle").addEventListener("click", function () {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".Card");
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        (rect.top <= 0 && rect.bottom >= 0) ||
+        (rect.bottom >=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <=
+                (window.innerHeight ||
+                    document.documentElement.clientHeight)) ||
+        (rect.top >= 0 &&
+            rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight))
+    );
+}
 
-    function checkVisibility() {
-        cards.forEach((card) => {
-            const rect = card.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-            if (isVisible) {
-                card.classList.add("animate-slide-in");
-            }
-        });
-    }
+function handleCardAnimation() {
+    const cards = document.querySelectorAll(".card-animation");
+    cards.forEach((card) => {
+        if (isElementInViewport(card)) {
+            card.classList.add("visible");
+        }
+    });
+}
 
-    window.addEventListener("scroll", checkVisibility);
-    checkVisibility(); // Check visibility on page load
-});
+document.addEventListener("scroll", handleCardAnimation);
