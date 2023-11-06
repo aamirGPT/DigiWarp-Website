@@ -244,6 +244,47 @@ body::-webkit-scrollbar {
     opacity: 1;
     transform: translateY(0);
 }
+.Section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--Accent-Background2);
+    color: var(--Black-Background);
+    padding: 60px 20px 60px 20px;
+}
+.Section-3-Container {
+    text-align: center;
+}
+#Section-3-Container1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#Section-3-Container2 {
+    font-size: 1.5rem;
+}
+#Section-3-Container3 {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.Section-3-Card {
+    flex: 1;
+    position: relative;
+}
+.Section-3-Card-Image {
+    width: 100%;
+}
+.Section-3-Card-Image img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+.Section-3-Card-Text {
+    background-color: var(--Black-Background);
+    color: var(--White-Background);
+    font-size: 1.5rem;
+    padding: 10px;
+}
 
 /* Responsive UI */
 
@@ -288,5 +329,21 @@ body::-webkit-scrollbar {
     }
     .Card-Body {
         gap: 10px;
+    }
+    .Section-3{
+        gap: 20px;
+    }
+    #Section-3-Container1 {
+        font-size: 1rem;
+    }
+    #Section-3-Container2 {
+        font-size: 1rem;
+    }
+    #Section-3-Container3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Section-3-Card-Text {
+        font-size: 1rem;
     }
 }
