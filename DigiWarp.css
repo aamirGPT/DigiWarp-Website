@@ -285,6 +285,19 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
     padding: 10px;
 }
+.Section-3-Container {
+    transform: scale(0.8);
+    animation: none; /* Add this line */
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
 
 /* Responsive UI */
 

@@ -36,3 +36,14 @@ function handleCardAnimation() {
 }
 
 document.addEventListener("scroll", handleCardAnimation);
+
+function handleTransitionAnimation() {
+    const elements = document.querySelectorAll(".Section-3-Container");
+    elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.style.animation = "grow 3.5s forwards";
+        }
+    });
+}
+
+document.addEventListener("scroll", handleTransitionAnimation);
