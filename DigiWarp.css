@@ -260,12 +260,14 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 #Section-3-Container2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    padding: 0px 60px;
 }
 #Section-3-Container3 {
     display: flex;
     flex-direction: row;
     gap: 100px;
+    padding: 0px 60px;
 }
 .Section-3-Card {
     flex: 1;
@@ -351,10 +353,12 @@ body::-webkit-scrollbar {
     }
     #Section-3-Container2 {
         font-size: 1rem;
+        padding: 0;
     }
     #Section-3-Container3 {
         flex-direction: column;
         gap: 20px;
+        padding: 0;
     }
     .Section-3-Card-Text {
         font-size: 1rem;
