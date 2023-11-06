@@ -31,6 +31,7 @@
 }
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 body {
     min-height: 100%;
@@ -203,11 +204,7 @@ body::-webkit-scrollbar{
     background-color: var(--Accent-Background2);
     color: var(--Black-Background);
     padding: 30px 20px 60px 20px;
-}
-.Section-2-Container {
-    display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 40px;
 }
 .Section-2-Heading {
@@ -276,8 +273,6 @@ body::-webkit-scrollbar{
     }
     .Section-2 {
         padding: 20px;
-    }
-    .Section-2-Container {
         gap: 20px;
     }
     .Section-2-Heading {
