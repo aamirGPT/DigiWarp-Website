@@ -3,6 +3,7 @@
     --Black-Background: #000;
     --Accent-Background: #c8c8b2;
     --Accent-Background2: #fffff5;
+    --Accent-Background3: #545441;
     --Green-Text: #284d26;
 }
 @font-face {
@@ -301,6 +302,69 @@ body::-webkit-scrollbar {
     }
 }
 
+.Section-4 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 45px 150px 45px;
+    gap: 80px;
+}
+.Section-4::before {
+    content: "";
+    background-image: url("./assets/images/Section4BG.jpg");
+    position: absolute;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-size: cover;
+}
+.Section-4-Header {
+    background-color: var(--Accent-Background3);
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--White-Background);
+}
+.Section-4-Body {
+    display: flex;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.2
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-right {
+    animation: slideInFromRight 3s ease-in-out;
+}
+
 /* Responsive UI */
 
 @media only screen and (max-width: 768px) {
@@ -345,7 +409,7 @@ body::-webkit-scrollbar {
     .Card-Body {
         gap: 10px;
     }
-    .Section-3{
+    .Section-3 {
         gap: 20px;
     }
     #Section-3-Container1 {
@@ -361,6 +425,17 @@ body::-webkit-scrollbar {
         padding: 0;
     }
     .Section-3-Card-Text {
+        font-size: 1rem;
+    }
+    .Section-4 {
+        gap: 50px;
+    }
+    .Section-4-Header {
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+    .Section-4-Body {
+        width: 100%;
         font-size: 1rem;
     }
 }

@@ -47,3 +47,16 @@ function handleTransitionAnimation() {
 }
 
 document.addEventListener("scroll", handleTransitionAnimation);
+
+function handleSection4Animation() {
+    const section4 = document.getElementById("section-4");
+    const header = document.querySelector(".Section-4-Header");
+    const body = document.querySelector(".Section-4-Body");
+    
+    if (isElementInViewport(section4)) {
+        header.classList.add("animate-slide-in-right");
+        body.classList.add("animate-slide-in-right");
+    }
+}
+
+document.addEventListener("scroll", handleSection4Animation);
