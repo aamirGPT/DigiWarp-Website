@@ -49,7 +49,7 @@ function handleTransitionAnimation() {
 document.addEventListener("scroll", handleTransitionAnimation);
 
 function handleSection4Animation() {
-    const section4 = document.getElementById("section-4");
+    const section4 = document.getElementById("Section-4");
     const header = document.querySelector(".Section-4-Header");
     const body = document.querySelector(".Section-4-Body");
     

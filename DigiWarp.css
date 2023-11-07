@@ -21,12 +21,12 @@
 }
 html {
     height: 100%;
-    scroll-behavior: smooth;
 }
 body {
     min-height: 100%;
     background-color: gray;
     font-family: Lovelo, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -178,7 +178,7 @@ body::-webkit-scrollbar {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     font-size: 1rem;
-    padding: 10px;
+    padding: 10px 0px;
     flex-direction: column;
 }
 
@@ -188,6 +188,12 @@ body::-webkit-scrollbar {
 .Menu-Links {
     text-decoration: none;
     text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+}
+.Menu-Links:hover {
+    background-color: var(--Accent-Background3);
+    color: var(--White-Background);
 }
 .Section-2 {
     display: flex;
@@ -336,12 +342,7 @@ body::-webkit-scrollbar {
     text-align: center;
     width: 40%;
     margin-left: auto;
-    background-color: rgba(
-        255,
-        255,
-        255,
-        0.2
-    );
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     padding: 20px;
