@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
 }
 .Navigation-Body {
     display: flex;
-    background-color: var(--White-Background);
+    background-color: var(--Accent-Background2);
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
