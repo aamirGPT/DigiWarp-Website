@@ -8,11 +8,22 @@
 }
 @font-face {
     font-family: "Lovelo";
-    src: url("./assets/font/Lovelo-Black.otf") format("otf"),
-        url("./assets/font/Lovelo-Line-Bold.otf") format("otf"),
-        url("./assets/font/Lovelo-Line-Light.otf") format("otf");
-    font-weight: normal;
-    font-style: normal;
+    src: url("./assets/font/Lovelo-Black/Lovelo-Black.ttf") format("truetype"),
+        url("./assets/font/Lovelo-Black/Lovelo-Black.woff") format("woff"),
+        url("./assets/font/Lovelo-Black/Lovelo-Black.woff2") format("woff2");
+}
+@font-face {
+    font-family: "HKGrotsek";
+    src: url("./assets/font/hk-grotesk/TTF/HKGrotesk-Regular.ttf")
+            format("truetype"),
+        url("./assets/font/hk-grotesk/WEB/HKGrotesk-Regular.woff")
+            format("woff"),
+        url("./assets/font/hk-grotesk/WEB/HKGrotesk-Regular.woff2")
+            format("woff2");
+}
+@font-face {
+    font-family: "Alata";
+    src: url("./assets/font/Alata/Alata-Regular.ttf") format("truetype");
 }
 
 * {
@@ -25,8 +36,8 @@ html {
 body {
     min-height: 100%;
     background-color: gray;
-    font-family: Lovelo, Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    font-family: Alata, Arial, Helvetica, sans-serif;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -72,7 +83,7 @@ body::-webkit-scrollbar {
     position: relative;
     background-color: black;
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 80px 100px;
     overflow: hidden;
     background-size: cover;
 }
@@ -81,6 +92,7 @@ body::-webkit-scrollbar {
     border-color: var(--Accent-Background);
     color: var(--Black-Background);
     font-weight: bold;
+    font-family: HKGrotsek;
 }
 .Section-1-Button-Styling:hover {
     background-color: #a4a492;
@@ -117,7 +129,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     padding: 5vh 0px;
     width: 65%;
-    gap: 20px;
+    gap: 40px;
 }
 .Section-1-Right {
     display: flex;
@@ -130,9 +142,11 @@ body::-webkit-scrollbar {
 .Section-1-Heading {
     font-size: 4.5rem;
     font-weight: bold;
+    font-family: Lovelo;
 }
 .Section-1-Tagline {
     font-size: 1.9rem;
+    font-family: Alata;
 }
 .Section-1-Button {
     font-size: 1.5rem;
@@ -199,13 +213,14 @@ body::-webkit-scrollbar {
     display: flex;
     background-color: var(--Accent-Background2);
     color: var(--Black-Background);
-    padding: 30px 20px 60px 20px;
+    padding: 80px 100px 60px 100px;
     flex-direction: column;
     gap: 40px;
 }
 .Section-2-Heading {
     font-size: 2rem;
     font-weight: bold;
+    font-family: HKGrotsek;
 }
 .Section-2-Body {
     display: flex;
@@ -217,11 +232,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 30px;
     position: relative;
-    width: 100%;
-    flex: 1;
-}
-.Card-Image {
-    height: 50%;
+    width: 60%;
 }
 .Section2CardImage {
     width: 100%;
@@ -237,6 +248,11 @@ body::-webkit-scrollbar {
 .Card-Body-Heading {
     color: var(--Green-Text);
     font-weight: bold;
+    font-size: 1.5rem;
+    font-family: HKGrotsek;
+}
+.Card-Body-Content {
+    font-size: 1.25rem;
 }
 .animate-slide-in {
     animation: slideIn 2s ease-in-out;
@@ -257,7 +273,7 @@ body::-webkit-scrollbar {
     gap: 40px;
     background-color: var(--Accent-Background2);
     color: var(--Black-Background);
-    padding: 60px 20px 60px 20px;
+    padding: 150px 80px 150px 80px;
 }
 .Section-3-Container {
     text-align: center;
@@ -265,10 +281,12 @@ body::-webkit-scrollbar {
 #Section-3-Container1 {
     font-size: 2rem;
     font-weight: bold;
+    font-family: HKGrotsek;
 }
 #Section-3-Container2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 0px 60px;
+    line-height: 3rem;
 }
 #Section-3-Container3 {
     display: flex;
@@ -345,7 +363,7 @@ body::-webkit-scrollbar {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    padding: 20px;
+    padding: 35px 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     font-size: 1.5rem;
@@ -379,6 +397,12 @@ body::-webkit-scrollbar {
         width: 40px;
         object-fit: contain;
     }
+    .Section-1 {
+        padding: 20px 20px;
+    }
+    .Section-1-Left {
+        gap: 20px;
+    }
     .Section-1-Heading {
         font-size: 2rem;
         font-weight: bold;
@@ -393,11 +417,11 @@ body::-webkit-scrollbar {
         font-size: 0.75rem;
     }
     .Section-2 {
-        padding: 20px;
+        padding: 40px;
         gap: 20px;
     }
     .Section-2-Heading {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: bold;
     }
     .Section-2-Body {
@@ -406,30 +430,40 @@ body::-webkit-scrollbar {
     }
     .Card {
         gap: 10px;
+        width: 100%;
     }
     .Card-Body {
         gap: 10px;
     }
+    .Card-Body-Heading {
+        font-size: 1rem;
+    }
+    .Card-Body-Content {
+        font-size: 1rem;
+    }
     .Section-3 {
         gap: 20px;
+        padding: 20px;
     }
     #Section-3-Container1 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     #Section-3-Container2 {
         font-size: 1rem;
         padding: 0;
+        line-height: 1.5;
     }
     #Section-3-Container3 {
         flex-direction: column;
         gap: 20px;
-        padding: 0;
+        padding: 20px;
     }
     .Section-3-Card-Text {
         font-size: 1rem;
     }
     .Section-4 {
         gap: 50px;
+        padding: 50px;
     }
     .Section-4-Header {
         border-radius: 20px;
@@ -438,5 +472,6 @@ body::-webkit-scrollbar {
     .Section-4-Body {
         width: 100%;
         font-size: 1rem;
+        padding: 15px 20px;
     }
 }
