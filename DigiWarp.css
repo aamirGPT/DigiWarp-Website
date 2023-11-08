@@ -358,6 +358,7 @@ body::-webkit-scrollbar {
     font-size: 3rem;
     font-weight: bold;
     color: var(--White-Background);
+    font-family: HKGrotsek;
 }
 .Section-4-Body {
     display: flex;
