@@ -66,6 +66,7 @@ body::-webkit-scrollbar {
     object-fit: contain;
 }
 .Logo-Text {
+    font-family: HKGrotsek;
     font-size: large;
     font-weight: bold;
 }
