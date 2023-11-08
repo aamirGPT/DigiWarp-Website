@@ -47,14 +47,17 @@ body::-webkit-scrollbar {
     background-color: var(--White-Background);
     justify-content: space-between;
     align-items: center;
-    height: 50px;
     padding: 15px 20px;
     flex: 1;
 }
-.Nav-Logo-Container,
-.Nav-Link-Container {
+.Nav-Logo-Container {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.Nav-Link-Container {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -389,6 +392,9 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 768px) {
     .Navigation-Body {
         height: fit-content;
+    }
+    .Nav-Link-Container{
+        gap: 5px;
     }
     .Nav-Link-Container img {
         width: 35px;
