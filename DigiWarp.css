@@ -271,7 +271,7 @@ body::-webkit-scrollbar {
     opacity: 1;
     transform: translateY(0);
 }
-.Section-3 {
+.Section-4 {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -279,44 +279,44 @@ body::-webkit-scrollbar {
     color: var(--Black-Background);
     padding: 150px 80px 150px 80px;
 }
-.Section-3-Container {
+.Section-4-Container {
     text-align: center;
 }
-#Section-3-Container1 {
+#Section-4-Container1 {
     font-size: 2rem;
     font-weight: bold;
     font-family: HKGrotsek;
 }
-#Section-3-Container2 {
+#Section-4-Container2 {
     font-size: 1.5rem;
     padding: 0px 60px;
     line-height: 3rem;
 }
-#Section-3-Container3 {
+#Section-4-Container3 {
     display: flex;
     flex-direction: row;
     gap: 100px;
     padding: 0px 60px;
 }
-.Section-3-Card {
+.Section-4-Card {
     flex: 1;
     position: relative;
 }
-.Section-3-Card-Image {
+.Section-4-Card-Image {
     width: 100%;
 }
-.Section-3-Card-Image img {
+.Section-4-Card-Image img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 3/2;
 }
-.Section-3-Card-Text {
+.Section-4-Card-Text {
     background-color: var(--Black-Background);
     color: var(--White-Background);
     font-size: 1.5rem;
     padding: 10px;
 }
-.Section-3-Container {
+.Section-4-Container {
     transform: scale(0.8);
     animation: none; /* Add this line */
 }
@@ -330,7 +330,7 @@ body::-webkit-scrollbar {
     }
 }
 
-.Section-4 {
+.Section-7 {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -338,9 +338,9 @@ body::-webkit-scrollbar {
     padding: 45px 45px 150px 45px;
     gap: 80px;
 }
-.Section-4::before {
+.Section-7::before {
     content: "";
-    background-image: url("./assets/images/Section4BG.jpg");
+    background-image: url("./assets/images/Section7BG.jpg");
     position: absolute;
     background-position: center;
     top: 0;
@@ -351,7 +351,7 @@ body::-webkit-scrollbar {
     opacity: 0.6;
     background-size: cover;
 }
-.Section-4-Header {
+.Section-7-Header {
     background-color: var(--Accent-Background3);
     border-radius: 30px;
     padding: 10px 40px;
@@ -360,7 +360,7 @@ body::-webkit-scrollbar {
     color: var(--White-Background);
     font-family: HKGrotsek;
 }
-.Section-4-Body {
+.Section-7-Body {
     display: flex;
     text-align: center;
     width: 40%;
@@ -449,35 +449,35 @@ body::-webkit-scrollbar {
     .Card-Body-Content {
         font-size: 1rem;
     }
-    .Section-3 {
+    .Section-4 {
         gap: 20px;
         padding: 20px;
     }
-    #Section-3-Container1 {
+    #Section-4-Container1 {
         font-size: 1.25rem;
     }
-    #Section-3-Container2 {
+    #Section-4-Container2 {
         font-size: 1rem;
         padding: 0;
         line-height: 1.5;
     }
-    #Section-3-Container3 {
+    #Section-4-Container3 {
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
-    .Section-3-Card-Text {
+    .Section-4-Card-Text {
         font-size: 1rem;
     }
-    .Section-4 {
+    .Section-7 {
         gap: 50px;
         padding: 50px;
     }
-    .Section-4-Header {
+    .Section-7-Header {
         border-radius: 20px;
         font-size: 1rem;
     }
-    .Section-4-Body {
+    .Section-7-Body {
         width: 100%;
         font-size: 1rem;
         padding: 15px 20px;

@@ -38,7 +38,7 @@ function handleCardAnimation() {
 document.addEventListener("scroll", handleCardAnimation);
 
 function handleTransitionAnimation() {
-    const elements = document.querySelectorAll(".Section-3-Container");
+    const elements = document.querySelectorAll(".Section-4-Container");
     elements.forEach((element) => {
         if (isElementInViewport(element)) {
             element.style.animation = "grow 3.5s forwards";
@@ -48,10 +48,10 @@ function handleTransitionAnimation() {
 
 document.addEventListener("scroll", handleTransitionAnimation);
 
-function handleSection4Animation() {
-    const section4 = document.getElementById("Section-4");
-    const header = document.querySelector(".Section-4-Header");
-    const body = document.querySelector(".Section-4-Body");
+function handleSection7Animation() {
+    const section4 = document.getElementById("Section-7");
+    const header = document.querySelector(".Section-7-Header");
+    const body = document.querySelector(".Section-7-Body");
     
     if (isElementInViewport(section4)) {
         header.classList.add("animate-slide-in-right");
@@ -59,4 +59,4 @@ function handleSection4Animation() {
     }
 }
 
-document.addEventListener("scroll", handleSection4Animation);
+document.addEventListener("scroll", handleSection7Animation);
