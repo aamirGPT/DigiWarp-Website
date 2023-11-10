@@ -18,6 +18,12 @@
             format("truetype"),
         url("./assets/font/hk-grotesk/WEB/HKGrotesk-Regular.woff")
             format("woff"),
+        url("./assets/font/hk-grotesk/TTF/HKGrotesk-Bold.ttf")
+            format("truetype"),
+        url("./assets/font/hk-grotesk/WEB/HKGrotesk-BoldItalic.woff")
+            format("woff"),
+        url("./assets/font/hk-grotesk/WEB/HKGrotesk-BoldItalic.woff2")
+            format("woff2"),
         url("./assets/font/hk-grotesk/WEB/HKGrotesk-Regular.woff2")
             format("woff2");
 }
@@ -318,7 +324,7 @@ body::-webkit-scrollbar {
 }
 .Section-4-Container {
     transform: scale(0.8);
-    animation: none; /* Add this line */
+    animation: none;
 }
 
 @keyframes grow {
@@ -329,6 +335,60 @@ body::-webkit-scrollbar {
         transform: scale(1);
     }
 }
+
+/* Subhranta Start - Aamir Customized*/
+.Section-6 {
+    background-color: #fffff5;
+    color: #333;
+}
+.Section-6-Header {
+    font-family: HKGrotsek, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 60px;
+    color: #000000;
+}
+.Section-6-Main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.Section-6-Boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Section-6-Box-1 {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    width: 200px;
+}
+
+.Section-6-Box-2,
+.Section-6-Box-3 {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    width: 300px;
+}
+
+.Section-6-Box-1 img,
+.Section-6-Box-2 img,
+.Section-6-Box-3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Subhranta End */
 
 .Section-7 {
     display: flex;
@@ -395,7 +455,7 @@ body::-webkit-scrollbar {
     .Navigation-Body {
         height: fit-content;
     }
-    .Nav-Link-Container{
+    .Nav-Link-Container {
         gap: 5px;
     }
     .Nav-Link-Container img {
