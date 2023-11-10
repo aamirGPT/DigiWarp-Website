@@ -26,8 +26,8 @@ function isElementInViewport(element) {
     );
 }
 
-function handleCardAnimation() {
-    const cards = document.querySelectorAll(".card-animation");
+function handleSection2Transition() {
+    const cards = document.querySelectorAll(".Section-2-Transition");
     cards.forEach((card) => {
         if (isElementInViewport(card)) {
             card.classList.add("visible");
@@ -35,28 +35,26 @@ function handleCardAnimation() {
     });
 }
 
-document.addEventListener("scroll", handleCardAnimation);
+document.addEventListener("scroll", handleSection2Transition);
 
-function handleTransitionAnimation() {
-    const elements = document.querySelectorAll(".Section-4-Container");
-    elements.forEach((element) => {
+function handleSection4Transition() {
+    const Elements = document.querySelectorAll(".Section-4-Transition");
+    Elements.forEach((element) => {
         if (isElementInViewport(element)) {
-            element.style.animation = "grow 3.5s forwards";
+            element.classList.add("visible");
         }
     });
 }
 
-document.addEventListener("scroll", handleTransitionAnimation);
+document.addEventListener("scroll", handleSection4Transition);
 
-function handleSection7Animation() {
-    const section4 = document.getElementById("Section-7");
-    const header = document.querySelector(".Section-7-Header");
-    const body = document.querySelector(".Section-7-Body");
-    
-    if (isElementInViewport(section4)) {
-        header.classList.add("animate-slide-in-right");
-        body.classList.add("animate-slide-in-right");
-    }
+function handleSection7Transition() {
+    const Elements = document.querySelectorAll(".Section-7-Transition");
+    Elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add("visible");
+        }
+    });
 }
 
-document.addEventListener("scroll", handleSection7Animation);
+document.addEventListener("scroll", handleSection7Transition);
