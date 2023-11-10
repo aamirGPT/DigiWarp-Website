@@ -441,7 +441,7 @@ body::-webkit-scrollbar {
 
 .Section-7-Transition.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 /* Responsive UI */
