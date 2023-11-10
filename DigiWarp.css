@@ -268,13 +268,13 @@ body::-webkit-scrollbar {
 .animate-slide-in {
     animation: slideIn 2s ease-in-out;
 }
-.Section-2-Transition {
+.DownToUpTransition {
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 3s, transform 3s;
 }
 
-.Section-2-Transition.visible {
+.DownToUpTransition.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -285,7 +285,7 @@ body::-webkit-scrollbar {
     gap: 40px;
     background-color: var(--Accent-Background2);
     color: var(--Black-Background);
-    padding: 150px 80px 150px 80px;
+    padding: 150px 100px 150px 100px;
 }
 .Section-4-Container {
     text-align: center;
@@ -297,14 +297,12 @@ body::-webkit-scrollbar {
 }
 #Section-4-Container2 {
     font-size: 1.5rem;
-    padding: 0px 60px;
     line-height: 3rem;
 }
 #Section-4-Container3 {
     display: flex;
     flex-direction: row;
     gap: 100px;
-    padding: 0px 60px;
 }
 .Section-4-Card {
     flex: 1;
@@ -324,67 +322,57 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
     padding: 10px;
 }
-.Section-4-Transition {
+.Grow-Transition {
     opacity: 0;
     transform: scale(0.5);
     transition: opacity 3s, transform 3s;
 }
 
-.Section-4-Transition.visible {
+.Grow-Transition.visible {
     opacity: 1;
     transform: scale(1);
 }
 
 /* Subhranta Start - Aamir Customized*/
 .Section-6 {
+    padding: 100px 100px;
     background-color: #fffff5;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .Section-6-Header {
     font-family: HKGrotsek, Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    padding: 60px;
+    font-size: 2rem;
+    padding: 20px 0;
+    margin: 0;
     color: #000000;
 }
 .Section-6-Main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    gap: 100px;
 }
 .Section-6-Boxes {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
-.Section-6-Box-1 {
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    width: 200px;
-}
-
+.Section-6-Box-1,
 .Section-6-Box-2,
 .Section-6-Box-3 {
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    width: 300px;
+    width: 100%;
 }
 
 .Section-6-Box-1 img,
 .Section-6-Box-2 img,
 .Section-6-Box-3 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
 }
 
 /* Subhranta End */
@@ -433,13 +421,13 @@ body::-webkit-scrollbar {
     font-size: 1.25vw;
 }
 
-.Section-7-Transition {
+.RightToLeftTransition {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(100px);
     transition: opacity 3s, transform 3s;
 }
 
-.Section-7-Transition.visible {
+.RightToLeftTransition.visible {
     opacity: 1;
     transform: translateX(0);
 }
@@ -524,6 +512,34 @@ body::-webkit-scrollbar {
     .Section-4-Card-Text {
         font-size: 1rem;
     }
+    /* Subhranta's code edited */
+    .Section-6 {
+        padding: 20px;
+    }
+    .Section-6-Header {
+        font-size: 1.25rem;
+        padding: 0;
+    }
+    .Section-6-Main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .Section-6-Boxes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .Section-6-Box-1,
+    .Section-6-Box-2,
+    .Section-6-Box-3 {
+        width: 100%;
+    }
+    .Section-6-Box-1 img,
+    .Section-6-Box-2 img,
+    .Section-6-Box-3 img {
+        width: 100%;
+    }
+    /* Subhranta end */
     .Section-7 {
         gap: 50px;
         padding: 50px;

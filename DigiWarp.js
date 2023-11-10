@@ -26,8 +26,8 @@ function isElementInViewport(element) {
     );
 }
 
-function handleSection2Transition() {
-    const cards = document.querySelectorAll(".Section-2-Transition");
+function handleDownToUpTransition() {
+    const cards = document.querySelectorAll(".DownToUpTransition");
     cards.forEach((card) => {
         if (isElementInViewport(card)) {
             card.classList.add("visible");
@@ -35,10 +35,10 @@ function handleSection2Transition() {
     });
 }
 
-document.addEventListener("scroll", handleSection2Transition);
+document.addEventListener("scroll", handleDownToUpTransition);
 
-function handleSection4Transition() {
-    const Elements = document.querySelectorAll(".Section-4-Transition");
+function handleGrowTransition() {
+    const Elements = document.querySelectorAll(".Grow-Transition");
     Elements.forEach((element) => {
         if (isElementInViewport(element)) {
             element.classList.add("visible");
@@ -46,10 +46,10 @@ function handleSection4Transition() {
     });
 }
 
-document.addEventListener("scroll", handleSection4Transition);
+document.addEventListener("scroll", handleGrowTransition);
 
-function handleSection7Transition() {
-    const Elements = document.querySelectorAll(".Section-7-Transition");
+function handleRightToLeftTransition() {
+    const Elements = document.querySelectorAll(".RightToLeftTransition");
     Elements.forEach((element) => {
         if (isElementInViewport(element)) {
             element.classList.add("visible");
@@ -57,4 +57,4 @@ function handleSection7Transition() {
     });
 }
 
-document.addEventListener("scroll", handleSection7Transition);
+document.addEventListener("scroll", handleRightToLeftTransition);
