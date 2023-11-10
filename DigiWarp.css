@@ -66,9 +66,10 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5vw;
 }
 .Logo img {
-    width: 50px;
+    width: 4vw;
     object-fit: contain;
 }
 .Logo-Text {
@@ -77,7 +78,7 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 .Nav-Link-Container img {
-    width: 50px;
+    width: 3.8vw;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
@@ -150,12 +151,12 @@ body::-webkit-scrollbar {
     align-items: flex-end;
 }
 .Section-1-Heading {
-    font-size: 4.5rem;
+    font-size: 4.25vw;
     font-weight: bold;
     font-family: Lovelo;
 }
 .Section-1-Tagline {
-    font-size: 1.9rem;
+    font-size: 2vw;
     font-family: Alata;
 }
 .Section-1-Button {
@@ -258,11 +259,11 @@ body::-webkit-scrollbar {
 .Card-Body-Heading {
     color: var(--Green-Text);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-family: HKGrotsek;
 }
 .Card-Body-Content {
-    font-size: 1.25rem;
+    font-size: 1.35vw;
 }
 .animate-slide-in {
     animation: slideIn 2s ease-in-out;
@@ -415,7 +416,7 @@ body::-webkit-scrollbar {
     background-color: var(--Accent-Background3);
     border-radius: 30px;
     padding: 10px 40px;
-    font-size: 3rem;
+    font-size: 3.25vw;
     font-weight: bold;
     color: var(--White-Background);
     font-family: HKGrotsek;
@@ -431,7 +432,7 @@ body::-webkit-scrollbar {
     padding: 35px 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25vw;
 }
 
 @keyframes slideInFromRight {
