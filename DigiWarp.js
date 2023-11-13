@@ -58,3 +58,20 @@ function handleRightToLeftTransition() {
 }
 
 document.addEventListener("scroll", handleRightToLeftTransition);
+
+
+// Subhranta JS:
+const readMoreButton = document.querySelector(".read-more-btn");
+const additionalContent = document.getElementById("extraContent");
+
+function toggleContent() {
+    if (additionalContent.style.display === "none") {
+        additionalContent.style.display = "block";
+        readMoreButton.textContent = "Read Less";
+    } else {
+        additionalContent.style.display = "none";
+        readMoreButton.textContent = "Read More";
+    }
+}
+
+readMoreButton.addEventListener("click", toggleContent);

@@ -77,6 +77,7 @@ body::-webkit-scrollbar {
     font-family: HKGrotsek;
     font-size: large;
     font-weight: bold;
+    color: #000;
 }
 .Nav-Link-Container img {
     width: 3.8vw;
@@ -335,6 +336,88 @@ body::-webkit-scrollbar {
 }
 
 /* Subhranta Start - Aamir Customized*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+.solution-heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.solution-subheading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.solution-subheading2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+.read-more-btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.additional-content {
+    display: none;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.read-more-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .Section-6 {
     padding: 100px 100px;
     background-color: #fffff5;
