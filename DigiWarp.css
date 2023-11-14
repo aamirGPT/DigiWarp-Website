@@ -103,14 +103,14 @@ body::-webkit-scrollbar {
     background: url(./assets/images/robotvid.mp4);
 }
 .Section-1-Button-Styling {
-    background-color: var(--Accent-Background);
+    background-color: var(--Accent-Background2);
     border-color: var(--Accent-Background);
     color: var(--Black-Background);
     font-weight: bold;
     font-family: HKGrotsek;
 }
 .Section-1-Button-Styling:hover {
-    background-color: #a4a492;
+    background-color: #dadada;
     border-color: #a4a492;
     color: var(--Black-Background);
 }
