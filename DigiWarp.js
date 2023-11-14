@@ -60,6 +60,27 @@ function handleRightToLeftTransition() {
 document.addEventListener("scroll", handleRightToLeftTransition);
 
 
+
+function handleDownToUpOnLoadTransition() {
+    const Elements = document.querySelectorAll(".DownToUpTransitionOnLoad");
+    Elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add("visible");
+        }
+    });
+}
+document.addEventListener("DOMContentLoaded", handleDownToUpOnLoadTransition);
+
+function HandleRightToLeftOnLoadTransition() {
+    const Elements = document.querySelectorAll(".RightToLeftTransitionOnLoad");
+    Elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add("visible");
+        }
+    });
+}
+document.addEventListener("DOMContentLoaded", HandleRightToLeftOnLoadTransition);
+
 // Subhranta JS:
 const readMoreButton = document.querySelector(".read-more-btn");
 const additionalContent = document.getElementById("extraContent");
