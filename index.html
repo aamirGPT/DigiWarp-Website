@@ -63,7 +63,10 @@
                     </button>
                 </div>
                 <video class="Section-1-Video" autoplay loop muted>
-                    <source src="./assets/images/robotvid.mp4" type="video/mp4" />
+                    <source
+                        src="./assets/images/robotvid.mp4"
+                        type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -318,6 +321,79 @@
                 with unmatched precision.<br /><br />We are dedicated to
                 accelerating the future of robotics and pushing the boundaries
                 of what robots can achieve.
+            </div>
+        </section>
+
+        <section class="Section-8">
+            <div class="Section-8-Heading">CONTACT US</div>
+            <div class="Section-8-Body">
+                <div class="Section-8-Body-Left">
+                    Join us at DigiWarp and embark on a journey to shape the
+                    future of robotics industry. <br /><br />Experience safer,
+                    more accessible, and incredibly intelligent robots that can
+                    elevate your operations to unprecedented heights.
+                </div>
+                <div class="Section-8-Body-Right">
+                    <div class="TypeForm">
+                        <div class="TF-Section-1">
+                            <video
+                                src="./assets/images/BotFooter.mp4"
+                                autoplay
+                                loop
+                                muted
+                            ></video>
+                        </div>
+                        <div class="TF-Section-2">
+                            <div class="TF-Section-2-Header">
+                                Love the Idea? We will contact you!<br />
+                                <span>
+                                    We are open to any suggestions or just to
+                                    have a chat
+                                </span>
+                            </div>
+                            <form
+                                class="TF-Section-2-Body"
+                                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAYlbGUjLKwv2T7QuELjs5Gv6VCYCdXKsqS4Qsn1zDqQ28iw/formResponse"
+                                onsubmit="return validateForm()"
+                            >
+                                <input
+                                    type="text"
+                                    class="form-control TF-Inputs"
+                                    placeholder="Name"
+                                    oninput="validateAlphabeticInput(this)"
+                                    name="entry.380032640"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    class="form-control TF-Inputs"
+                                    placeholder="name@example.com"
+                                    name="entry.1512683108"
+                                    id="emailInput"
+                                    oninput="validateEmail()"
+                                    required
+                                />
+                                <span
+                                    id="emailError"
+                                    style="color: red; font-size: 14px"
+                                ></span>
+                                <textarea
+                                    class="form-control TF-Inputs"
+                                    placeholder="Any Questions or Messages"
+                                    id="floatingTextarea"
+                                    name="entry.1426488208"
+                                ></textarea>
+
+                                <button
+                                    class="btn btn-primary TF-Submit"
+                                    type="submit"
+                                >
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

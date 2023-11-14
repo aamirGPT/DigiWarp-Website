@@ -59,8 +59,6 @@ function handleRightToLeftTransition() {
 
 document.addEventListener("scroll", handleRightToLeftTransition);
 
-
-
 function handleDownToUpOnLoadTransition() {
     const Elements = document.querySelectorAll(".DownToUpTransitionOnLoad");
     Elements.forEach((element) => {
@@ -79,7 +77,10 @@ function HandleRightToLeftOnLoadTransition() {
         }
     });
 }
-document.addEventListener("DOMContentLoaded", HandleRightToLeftOnLoadTransition);
+document.addEventListener(
+    "DOMContentLoaded",
+    HandleRightToLeftOnLoadTransition
+);
 
 // Subhranta JS:
 const readMoreButton = document.querySelector(".read-more-btn");
@@ -96,3 +97,36 @@ function toggleContent() {
 }
 
 readMoreButton.addEventListener("click", toggleContent);
+
+function validateAlphabeticInput(input) {
+    input.value = input.value.replace(/[^a-zA-Z\s]/g, "");
+}
+
+function validateEmail() {
+    let emailInput = document.getElementById("emailInput").value;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailError = document.getElementById("emailError");
+
+    if (emailInput === "") {
+        emailError.textContent = ""; // Clear error message if no input
+    } else if (emailRegex.test(emailInput)) {
+        emailError.textContent = ""; // Clear error message if email is valid
+    } else {
+        emailError.textContent = "Please enter a valid email address";
+    }
+}
+function validateForm() {
+    // Check the email input before submitting the form
+    let emailInput = document.getElementById("emailInput").value;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailError = document.getElementById("emailError");
+
+    if (emailInput === "" || !emailRegex.test(emailInput)) {
+        // Display error message and prevent form submission
+        emailError.textContent = "Please enter a valid email address";
+        return false;
+    }
+
+    // If everything is valid, you can proceed with form submission
+    return true;
+}
