@@ -230,6 +230,7 @@ body::-webkit-scrollbar {
     text-align: center;
     width: 100%;
     padding: 5px 10px;
+    color: var(--Accent-Background2);
 }
 .Menu-Links:hover {
     background-color: var(--Accent-Background3);
