@@ -59,6 +59,17 @@ function handleRightToLeftTransition() {
 
 document.addEventListener("scroll", handleRightToLeftTransition);
 
+function handleLeftToRightTransition() {
+    const Elements = document.querySelectorAll(".LeftToRightTransition");
+    Elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add("visible");
+        }
+    });
+}
+
+document.addEventListener("scroll", handleLeftToRightTransition);
+
 function handleDownToUpOnLoadTransition() {
     const Elements = document.querySelectorAll(".DownToUpTransitionOnLoad");
     Elements.forEach((element) => {
