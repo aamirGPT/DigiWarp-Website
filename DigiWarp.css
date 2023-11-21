@@ -485,56 +485,6 @@ body::-webkit-scrollbar {
     object-fit: cover;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.container1,
-.container2,
-.container3,
-.container4 {
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-}
-
-.container1,
-.container3 {
-    padding-right: 95px;
-}
-
-.container2,
-.container4 {
-    padding-left: 95px;
-}
-
-.image2 {
-    width: 240px;
-}
-
-.container1 img,
-.container2 img,
-.container3 img,
-.container4 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2px;
-}
-
 /* Subhranta End */
 /* Subhranta's Code -- Aamir Customized */
 .Section-6 {
