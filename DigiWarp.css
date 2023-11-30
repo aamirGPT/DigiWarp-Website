@@ -304,6 +304,16 @@ body::-webkit-scrollbar {
     opacity: 1;
     transform: translateY(0);
 }
+.UpToDownTransitionOnLoad {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 3s, transform 3s;
+}
+
+.UpToDownTransitionOnLoad.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .Section-4 {
     display: flex;

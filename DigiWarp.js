@@ -80,6 +80,16 @@ function handleDownToUpOnLoadTransition() {
 }
 document.addEventListener("DOMContentLoaded", handleDownToUpOnLoadTransition);
 
+function handleUpToDownOnLoadTransition() {
+    const Elements = document.querySelectorAll(".UpToDownTransitionOnLoad");
+    Elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add("visible");
+        }
+    });
+}
+document.addEventListener("DOMContentLoaded", handleUpToDownOnLoadTransition);
+
 function HandleRightToLeftOnLoadTransition() {
     const Elements = document.querySelectorAll(".RightToLeftTransitionOnLoad");
     Elements.forEach((element) => {
