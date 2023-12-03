@@ -315,7 +315,94 @@ body::-webkit-scrollbar {
     transform: translateY(0);
 }
 
-.Section-4 {
+.header4 {
+    background-color: white;
+    padding: -1px;
+    text-align: left;
+    font-size: 25px;
+    background-color: black;
+    color: aliceblue;
+    position: relative;
+}
+
+.header4::after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 4px;
+    background-color: rgb(159, 88, 224);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.slide_color {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+
+.main_section4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.left_sec4 {
+    flex: 1;
+    padding: 1px 90px;
+    width: 100%;
+    max-width: 212px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.right_sec4 {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightside {
+    margin-left: 80px;
+}
+
+.all_image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .left_sec4 {
+        flex: 1;
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .right_sec4 {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .left_sec4 {
+        width: 40%;
+    }
+
+    .right_sec4 {
+        flex: 2;
+    }
+}
+
+.Section-5 {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -323,36 +410,36 @@ body::-webkit-scrollbar {
     color: var(--White-Background);
     padding: 150px 100px 150px 100px;
 }
-.Section-4-Container {
+.Section-5-Container {
     text-align: center;
 }
-#Section-4-Container1 {
+#Section-5-Container1 {
     font-size: 2rem;
     font-weight: bold;
     font-family: HKGrotsek;
 }
-#Section-4-Container2 {
+#Section-5-Container2 {
     font-size: 1.5rem;
     line-height: 3rem;
 }
-#Section-4-Container3 {
+#Section-5-Container3 {
     display: flex;
     flex-direction: row;
     gap: 100px;
 }
-.Section-4-Card {
+.Section-5-Card {
     flex: 1;
     position: relative;
 }
-.Section-4-Card-Image {
+.Section-5-Card-Image {
     width: 100%;
 }
-.Section-4-Card-Image img {
+.Section-5-Card-Image img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 3/2;
 }
-.Section-4-Card-Text {
+.Section-5-Card-Text {
     background-color: var(--Black-Background);
     color: var(--White-Background);
     font-size: 2vw;
@@ -443,12 +530,12 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-.Section-5 {
+.Section-6 {
     color: #fff;
     background-color: #000;
     padding: 50px 0;
 }
-.Section-5-heading {
+.Section-6-heading {
     font-family: HKGrotsek;
     text-align: center;
     margin-bottom: 60px;
@@ -459,41 +546,41 @@ body::-webkit-scrollbar {
     color: #ffffff;
 }
 
-.Section-5-container {
+.Section-6-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.Section-5-row {
+.Section-6-row {
     display: flex;
     justify-content: center;
     gap: 200px;
 }
 
-.Section-5-column {
+.Section-6-column {
     width: 350px;
     padding: 10px;
 }
-.Section-5-content {
+.Section-6-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Section-5-image {
+.Section-6-image {
     margin-bottom: 10px;
     width: 100%;
     height: 200px; /* Adjust the height as needed */
     overflow: hidden;
 }
-.Section-5-image img {
+.Section-6-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.Section-6 {
+.Section-7 {
     padding: 100px 100px;
     background-color: var(--Black-Background);
     color: var(--White-Background);
@@ -501,7 +588,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 40px;
 }
-.Section-6-Header {
+.Section-7-Header {
     font-family: HKGrotsek, Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -510,7 +597,7 @@ body::-webkit-scrollbar {
     margin: 0;
     color: var(--White-Background);
 }
-.Section-6-Main {
+.Section-7-Main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -524,19 +611,19 @@ body::-webkit-scrollbar {
     height: 200px;
     gap: 8%;
 }
-.Section-6-Box {
+.Section-7-Box {
     display: flex;
     justify-content: center;
     width: 350px;
     height: 100%;
 }
-.Section-6-Box img {
+.Section-7-Box img {
     width: 100%;
     object-fit: contain;
     aspect-ratio: 3/2;
 }
 
-.Section-7 {
+.Section-8 {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -544,7 +631,7 @@ body::-webkit-scrollbar {
     padding: 45px 45px 150px 45px;
     gap: 80px;
 }
-.Section-7::before {
+.Section-8::before {
     content: "";
     background-image: url("./assets/images/Section7BG.jpg");
     position: absolute;
@@ -557,7 +644,7 @@ body::-webkit-scrollbar {
     filter: blur(1px);
     opacity: 0.2;
 }
-.Section-7-Header {
+.Section-8-Header {
     background-color: var(--Black-Background);
     border-radius: 30px;
     padding: 10px 40px;
@@ -567,7 +654,7 @@ body::-webkit-scrollbar {
     font-family: HKGrotsek;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-.Section-7-Body {
+.Section-8-Body {
     display: flex;
     text-align: center;
     width: 40%;
@@ -613,7 +700,7 @@ body::-webkit-scrollbar {
     transform: translateX(0);
 }
 
-.Section-8 {
+.Section-9 {
     display: flex;
     background-color: var(--Black-Background);
     color: var(--White-Background);
@@ -621,24 +708,24 @@ body::-webkit-scrollbar {
     gap: 100px;
     padding: 50px 100px;
 }
-.Section-8-Heading {
+.Section-9-Heading {
     display: flex;
     justify-content: center;
     font-size: 2rem;
     font-family: HKGrotsek;
 }
-.Section-8-Body {
+.Section-9-Body {
     display: flex;
     gap: 100px;
 }
-.Section-8-Body-Left {
+.Section-9-Body-Left {
     width: 40%;
     text-shadow: 0 1px 10px var(--Accent-Background);
     font-size: 1.25vw;
     display: flex;
     align-items: center;
 }
-.Section-8-Body-Right {
+.Section-9-Body-Right {
     width: 100%;
 }
 .TypeForm {
@@ -762,24 +849,24 @@ body::-webkit-scrollbar {
     .Card-Body-Content {
         font-size: 1rem;
     }
-    .Section-4 {
+    .Section-5 {
         gap: 20px;
         padding: 20px;
     }
-    #Section-4-Container1 {
+    #Section-5-Container1 {
         font-size: 1.25rem;
     }
-    #Section-4-Container2 {
+    #Section-5-Container2 {
         font-size: 1rem;
         padding: 0;
         line-height: 1.5;
     }
-    #Section-4-Container3 {
+    #Section-5-Container3 {
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
-    .Section-4-Card-Text {
+    .Section-5-Card-Text {
         font-size: 1rem;
     }
     .Section-3 {
@@ -817,31 +904,31 @@ body::-webkit-scrollbar {
         padding: 0 0 10px 0;
         text-align: left;
     }
-    .Section-5 {
+    .Section-6 {
         padding: 20px 0;
     }
-    .Section-5-heading {
+    .Section-6-heading {
         margin-bottom: 40px;
     }
-    .Section-5-row {
+    .Section-6-row {
         flex-direction: column;
         align-items: center;
         gap: 40px;
     }
-    .Section-5-container {
+    .Section-6-container {
         padding: 0 40px;
     }
-    .Section-5-column {
+    .Section-6-column {
         width: 100%;
     }
-    .Section-6 {
+    .Section-7 {
         padding: 20px;
     }
-    .Section-6-Header {
+    .Section-7-Header {
         font-size: 1.25rem;
         padding: 0;
     }
-    .Section-6-Main {
+    .Section-7-Main {
         gap: 0;
         padding: 20px;
     }
@@ -850,35 +937,35 @@ body::-webkit-scrollbar {
         height: 100%;
         gap: 0;
     }
-    .Section-6-Box {
+    .Section-7-Box {
         width: 100%;
         margin-bottom: 20px;
     }
-    .Section-7 {
+    .Section-8 {
         gap: 50px;
         padding: 50px;
     }
-    .Section-7-Header {
+    .Section-8-Header {
         border-radius: 20px;
         font-size: 1rem;
     }
-    .Section-7-Body {
+    .Section-8-Body {
         width: 100%;
         font-size: 1rem;
         padding: 15px 20px;
     }
-    .Section-8 {
+    .Section-9 {
         padding: 40px;
         gap: 20px;
     }
-    .Section-8-Heading {
+    .Section-9-Heading {
         font-size: 2rem;
     }
-    .Section-8-Body {
+    .Section-9-Body {
         flex-direction: column;
         gap: 40px;
     }
-    .Section-8-Body-Left {
+    .Section-9-Body-Left {
         width: 100%;
         font-size: 16px;
     }
