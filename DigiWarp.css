@@ -320,12 +320,11 @@ body::-webkit-scrollbar {
     padding: 60px 100px;
 }
 .header4 {
-    background-color: white;
     text-align: left;
     font-size: 25px;
-    background-color: black;
-    color: aliceblue;
+    color: var(--White-Background);
     position: relative;
+    font-size: 2rem;
 }
 
 .header4::after {
@@ -341,6 +340,7 @@ body::-webkit-scrollbar {
     position: absolute;
     bottom: 0;
     left: 0;
+    margin: -10px 0;
 }
 
 .main_section4 {
@@ -354,7 +354,7 @@ body::-webkit-scrollbar {
     min-width: 20%;
     color: var(--White-Background);
     line-height: 1.25lh;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: left;
 }
 
@@ -977,7 +977,7 @@ body::-webkit-scrollbar {
             rgba(18, 194, 232, 1) 100%
         );
         position: absolute;
-        margin: auto;
+        margin: -5px auto;
         left: 0;
         right: 0;
     }
@@ -994,6 +994,7 @@ body::-webkit-scrollbar {
         line-height: 1lh;
         margin-bottom: 10px;
         text-align: center;
+        font-size: 1rem;
     }
     .all_image {
         width: 100%;
